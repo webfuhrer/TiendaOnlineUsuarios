@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Login</div>
+        <form action="ServletTienda" method="POST">
+            Usuario:<input type="text" name="usuario" placeholder="Introduzca su usuario"><br>
+            Password<input type="password" name="password" placeholder="Introduzca su password"><br>
+            <input type="hidden" name="accion" value="login">
+            <input type="submit" value="Login">
+        </form>
+        <div>Registro</div>
+        <form action="ServletTienda" method="POST">
+            Usuario:<input type="text" name="usuario" placeholder="Introduzca su usuario"><br>
+            Password<input type="password" name="password" placeholder="Introduzca su password"><br>
+            Saldo: <input type="number"  name="saldo" placeholder="Introduzca su saldo">              
+            <input type="hidden" name="accion" value="registro">
+            <input type="submit" value="Registrarse">
+        </form>
+    </body>
+</html>
